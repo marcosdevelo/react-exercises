@@ -7,7 +7,7 @@ const Jumbotron = props => {
 };
 
 Jumbotron.propTypes = {
-    //proptypes here
+	//proptypes here
 };
 
 ReactDOM.render(
