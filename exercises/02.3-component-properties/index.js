@@ -9,8 +9,8 @@ const BootstrapCard = props => {
 			<img className="card-img-top" src="https://ucarecdn.com/f8cf81eb-3bab-4bba-9431-668884eab174/-/resize/300x/" alt="Card image cap" />
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
-				<p className="card-text">Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer-songwriter.</p>
-				<a href="https://en.wikipedia.org/wiki/Bob_Dylan" className="btn btn-primary">
+				<p className="card-text">{props.description}</p>
+				<a href={props.img} className="btn btn-primary">
 					Go to wikipedia
 				</a>
 			</div>
