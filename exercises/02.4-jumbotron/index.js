@@ -3,10 +3,23 @@ import ReactDOM from "react-dom";
 import PropType from "prop-types";
 
 const Jumbotron = props => {
+	return (
+		<div className="jumbotron m-5">
+			<h1 className="display-4">{props.title}</h1>
+			<p className="lead">{props.description}</p>
+			<a className="btn btn-primary btn-lg" href={props.buttonURL} role="button">
+				{props.buttonLabel}
+			</a>
+		</div>
+	);
 	//here you have to return expected html using the properties being passed to the component
 };
 
 Jumbotron.propTypes = {
+	title: PropType.string,
+	description: PropType.string,
+	buttonLabel: PropType.string,
+	buttonURL: PropType.string
 	//proptypes here
 };
 
